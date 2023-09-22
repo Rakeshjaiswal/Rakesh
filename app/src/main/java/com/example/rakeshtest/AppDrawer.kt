@@ -65,6 +65,7 @@ fun AppDrawer(
             selected = route == AllDestinations.LOGOUT,
             onClick = {
                 navigateToLogout()
+               login.logout()
                 closeDrawer()
             },
             icon = { Icon(imageVector = Icons.Default.ExitToApp, contentDescription = null) },

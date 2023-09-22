@@ -99,5 +99,8 @@ class LoginViewModel : ViewModel() {
             }
         }
     }
+    fun logout() {
+        loginState.value = loginState.value.copy(isLoginSuccessful = false)
+    }
 
 }
